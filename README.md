@@ -14,8 +14,8 @@ Welcome to the Book Rental System! This project is designed to manage a library 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/book-rental-system.git
-    cd book-rental-system
+    git clone https://github.com/AmritanshuPrashar/GoFr-book-rental.git
+    cd GoFr-book-rental
     ```
 
 2. Install dependencies:

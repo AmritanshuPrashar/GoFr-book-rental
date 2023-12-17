@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "47551eab-203b-4936-9e90-7af303b4b9ed",
+		"name": "GoFr-book-retal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21261747"
+	},
+	"item": [
+		{
+			"name": "To Get all books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9000/books"
+			},
+			"response": []
+		},
+		{
+			"name": "To Add new book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Harry Potter\",\r\n    \"author\": \"J. K. Rowling\",\r\n    \"availableCount\" : 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/books"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9000/books/657efa4a9556b6f9549a8235"
+			},
+			"response": []
+		},
+		{
+			"name": "Update book by iD",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Harry Potter\",\r\n    \"author\": \"J. K. Rowling\",\r\n    \"availableCount\" : 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/books/657efa4a9556b6f9549a8235"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:9000/books/657efa4a9556b6f9549a8235"
+			},
+			"response": []
+		},
+		{
+			"name": "Rent a book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:9000/books/rent/657f579431a925ecb612672e"
+			},
+			"response": []
+		},
+		{
+			"name": "Return Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:9000/books/return/657f579431a925ecb612672e"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all rentals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9000/rentals"
+			},
+			"response": []
+		}
+	]
+}
